@@ -20,7 +20,12 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar{
+        display: none; /* Chrome, Safari and Opera */
+    }
   }
 
   button {
